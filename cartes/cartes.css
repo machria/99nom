@@ -1,62 +1,11 @@
-/* 🌐 Polices personnalisées */
-@import url("https://fonts.googleapis.com/css2?family=Amiri&family=Nunito&display=swap");
 
-/* 🌐 Barre de navigation */
-header {
-  background-color: #1e5f74;
-  padding: 15px 20px;
-  color: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 960px;
-  margin: auto;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #3caea3;
-}
-
-/* 🌙 Corps de page */
-body {
-  font-family: 'Nunito', sans-serif;
-  background: linear-gradient(to bottom, #f2f4f6, #e3e8ec);
-  color: #222831;
-  margin: 0;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-/* 🏋️ Carte */
+/* 🃏 Conteneur de la carte */
 .card-container {
   width: 320px;
   margin: 20px auto;
 }
 
+/* 🧱 Carte */
 .card {
   width: 100%;
   height: 200px;
@@ -75,54 +24,20 @@ body {
   transform: scale(1.02);
 }
 
+/* 📄 Contenu de la carte */
 .card-face {
   width: 100%;
   height: 100%;
   text-align: center;
   font-size: 2rem;
-  font-family: 'Amiri', serif;
+  font-family: "Amiri", serif;
   color: #1e5f74;
 }
 
-/* 🔢 Progression */
+/* 🔢 Indicateur de progression */
 #progression {
   margin-top: 15px;
   font-weight: bold;
   color: #20639b;
 }
 
-/* 🔘 Boutons */
-.buttons {
-  margin-top: 20px;
-}
-
-button {
-  background-color: #3caea3;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 15px;
-  font-size: 16px;
-  margin: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #2b9e94;
-}
-
-/* 📅 Pied de page */
-footer {
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #1e5f74;
-  color: white;
-  text-align: center;
-  font-size: 0.9rem;
-  border-radius: 10px;
-}
-.logo a {
-  text-decoration: none;
-  color: inherit; /* Conserve la couleur du texte parent */
-}

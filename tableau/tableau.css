@@ -1,0 +1,31 @@
+#all-cards {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #1e5f74;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f4f6;
+  }
+  
+  tr:hover {
+    background-color: #e3e8ec;
+  }
+  

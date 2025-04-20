@@ -1,16 +1,16 @@
+import { fetchCardsData } from '../utils/utils.js';
+
 let cards = [];
 
 // Charger les données
-fetch("../noms.json")
-  .then((response) => response.json())
-  .then((data) => {
-    console.log("Données chargées :", data); // Vérifiez les données ici
-    cards = data;
+const url = '../assets/noms.json';
+fetchCardsData(url).then((data) => {
+  console.log("Données chargées :", data); // Vérifiez les données ici
+  cards = data;
 
-    // Appeler showAllCards après le chargement des données
-    showAllCards();
-  })
-  .catch((error) => console.error("Erreur lors du chargement des données :", error));
+  // Appeler showAllCards après le chargement des données
+  showAllCards();
+}).catch((error) => console.error("Erreur lors du chargement des données :", error));
 
 function showAllCards() {
   const tableBody = document.getElementById("cards-table-body");

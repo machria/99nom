@@ -50,115 +50,6 @@ body {
   text-align: center;
 }
 
-/* 🃏 Conteneur de la carte */
-.card-container {
-  width: 320px;
-  margin: 20px auto;
-}
-
-/* 🧱 Carte */
-.card {
-  width: 100%;
-  height: 200px;
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: scale(1.02);
-}
-
-/* 📄 Contenu de la carte */
-.card-face {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-size: 2rem;
-  font-family: "Amiri", serif;
-  color: #1e5f74;
-}
-
-/* 🔢 Indicateur de progression */
-#progression {
-  margin-top: 15px;
-  font-weight: bold;
-  color: #20639b;
-}
-
-/* 🔘 Boutons navigation */
-.buttons {
-  margin-top: 20px;
-}
-
-button {
-  background-color: #3caea3;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 15px;
-  font-size: 16px;
-  margin: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #2b9e94;
-}
-
-/* 🎓 Zone du quizz */
-#quiz {
-  background-color: #ffffff;
-  width: 320px;
-  margin: 40px auto;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-#quiz-question {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-#quiz-nom {
-  font-size: 2rem;
-  font-family: "Amiri", serif;
-  color: #1e5f74;
-  margin-bottom: 15px;
-}
-
-#quiz-options button {
-  display: block;
-  width: 100%;
-  margin: 8px 0;
-  font-size: 16px;
-  padding: 10px;
-  border-radius: 8px;
-  background-color: #3caea3;
-  color: white;
-  border: none;
-  transition: background-color 0.3s ease;
-}
-
-#quiz-options button:hover {
-  background-color: #2b9e94;
-}
-
-#quiz-feedback {
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 16px;
-}
 
 .hadith {
   max-width: 600px;
@@ -198,46 +89,27 @@ button:hover {
   margin-bottom: 15px;
 }
 
-.correct {
-  background-color: #3fbf3f !important; /* Vert */
-  color: white;
-}
-
-.incorrect {
-  background-color: #e94f37 !important; /* Rouge */
-  color: white;
-}
-
-#all-cards {
-  margin: 20px auto;
-  max-width: 800px;
-  text-align: center;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: center;
-}
-
-th {
-  background-color: #1e5f74;
-  color: white;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f4f6;
-}
-
-tr:hover {
-  background-color: #e3e8ec;
-}
+/* 🔘 Boutons navigation */
+.buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #3caea3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2b9e94;
+  }
+  
 
 .intro {
   text-align: center;

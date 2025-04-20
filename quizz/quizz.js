@@ -1,18 +1,18 @@
+import { fetchCardsData } from '../utils/utils.js';
+
 let cards = [];
 let quizIndex = 0;
 let quizScore = 0;
 let shuffledCards = [];
 
 // Charger les données
-fetch("../noms.json")
-  .then((response) => response.json())
-  .then((data) => {
-    cards = data;
-    startQuiz();
-  })
-  .catch((error) =>
-    console.error("Erreur lors du chargement des données :", error)
-  );
+const url = '../assets/noms.json';
+fetchCardsData(url).then((data) => {
+  cards = data;
+  startQuiz();
+}).catch((error) =>
+  console.error("Erreur lors du chargement des données :", error)
+);
 
 function startQuiz() {
   // Réinitialisation
@@ -134,3 +134,8 @@ function nextQuizQuestion() {
 function exitQuiz() {
   window.location.href = "../cartes/cartes.html"; // Redirige vers la page des cartes
 }
+
+// Rendre les fonctions accessibles globalement
+window.startQuiz = startQuiz;
+window.nextQuizQuestion = nextQuizQuestion;
+window.exitQuiz = exitQuiz;

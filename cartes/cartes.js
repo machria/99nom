@@ -1,15 +1,14 @@
+import { fetchCardsData } from '../utils/utils.js';
+
 let cards = [];
 let currentIndex = 0;
 let currentStep = 0; // 0 = arabe, 1 = translit, 2 = trad
 
-// Charger les données depuis le fichier JSON
-fetch("../noms.json")
-  .then((response) => response.json())
-  .then((data) => {
-    cards = data;
-    updateCardContent();
-  })
-  .catch((error) => console.error("Erreur lors du chargement des données :", error));
+const url = '../assets/noms.json';
+fetchCardsData(url).then((data) => {
+  cards = data;
+  updateCardContent();
+}).catch((error) => console.error("Erreur lors du chargement des données :", error));
 
 function updateCardContent() {
   if (!cards || cards.length === 0) return;
@@ -64,6 +63,12 @@ function randomCard() {
   currentStep = 0;
   updateCardContent();
 }
+
+// Rendre les fonctions accessibles globalement
+window.toggleCard = toggleCard;
+window.nextCard = nextCard;
+window.previousCard = previousCard;
+window.randomCard = randomCard;
 
 // Affiche les éléments une fois le DOM chargé
 window.addEventListener("DOMContentLoaded", () => {
