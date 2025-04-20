@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cartes - Les 99 Noms d'Allah</title>
+    <link rel="stylesheet" href="cartes.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1 class="logo"><a href="../index.html">🌙 Les 99 Noms d’Allah</a></h1>
+        <ul class="nav-links">
+          <li><a href="../cartes/cartes.html">Cartes</a></li>
+          <li><a href="../quizz/quizz.html">Quizz</a></li>
+          <li><a href="../tableau/tableau.html">Tableau des noms</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="card-container" id="cards-section">
+        <div class="card" onclick="toggleCard()">
+          <div class="card-face">
+            <h2 id="card-content">Nom en arabe</h2>
+          </div>
+        </div>
+      </div>
+
+      <p id="progression"></p>
+
+      <div class="buttons" id="cards-buttons">
+        <button onclick="previousCard()">← Précédent</button>
+        <button onclick="nextCard()">Suivant →</button>
+        <button onclick="randomCard()">Aléatoire 🎲</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Les 99 Noms d'Allah</p>
+    </footer>
+
+    <script src="cartes.js"></script>
+  </body>
+</html>

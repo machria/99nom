@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quizz - Les 99 Noms d'Allah</title>
+  <link rel="stylesheet" href="quizz.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo"><a href="../index.html">🌙 Les 99 Noms d’Allah</a></h1>
+      <ul class="nav-links">
+        <li><a href="../cartes/cartes.html">Cartes</a></li>
+        <li><a href="../quizz/quizz.html">Quizz</a></li>
+        <li><a href="../tableau/tableau.html">Tableau des noms</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="quiz">
+      <p id="quiz-question">Que signifie ce nom ?</p>
+      <h2 id="quiz-nom">Nom</h2>
+
+      <div id="quiz-options"></div>
+
+      <p id="quiz-feedback"></p>
+
+      <div class="buttons">
+        <button onclick="nextQuizQuestion()">Question suivante</button>
+        <button onclick="exitQuiz()">Retour aux cartes 🏠</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Les 99 Noms d'Allah</p>
+  </footer>
+
+ 
+</body>
+<script src="quizz.js"></script>
+</html>

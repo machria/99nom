@@ -1,0 +1,308 @@
+/* 🌐 Polices personnalisées */
+@import url("https://fonts.googleapis.com/css2?family=Amiri&family=Nunito&display=swap");
+/* 🌐 Barre de navigation */
+header {
+  background-color: #1e5f74;
+  padding: 15px 20px;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #3caea3;
+}
+
+/* 🎨 Base générale */
+body {
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(to bottom, #f2f4f6, #e3e8ec);
+  color: #222831;
+  margin: 0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* 🃏 Conteneur de la carte */
+.card-container {
+  width: 320px;
+  margin: 20px auto;
+}
+
+/* 🧱 Carte */
+.card {
+  width: 100%;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* 📄 Contenu de la carte */
+.card-face {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Amiri", serif;
+  color: #1e5f74;
+}
+
+/* 🔢 Indicateur de progression */
+#progression {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #20639b;
+}
+
+/* 🔘 Boutons navigation */
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #3caea3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2b9e94;
+}
+
+/* 🎓 Zone du quizz */
+#quiz {
+  background-color: #ffffff;
+  width: 320px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#quiz-question {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#quiz-nom {
+  font-size: 2rem;
+  font-family: "Amiri", serif;
+  color: #1e5f74;
+  margin-bottom: 15px;
+}
+
+#quiz-options button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #3caea3;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#quiz-options button:hover {
+  background-color: #2b9e94;
+}
+
+#quiz-feedback {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.hadith {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  font-style: italic;
+  color: #333;
+}
+
+.hadith blockquote {
+  margin: 0;
+}
+
+.hadith p {
+  font-family: "Scheherazade New", serif;
+  font-size: 1.2rem;
+  color: #1e5f74;
+}
+
+.hadith cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #555;
+  text-align: right;
+}
+
+.arabic {
+  font-family: "Scheherazade New", serif;
+  font-size: 1.5rem;
+  direction: rtl;
+  text-align: right;
+  color: #1e5f74;
+  margin-bottom: 15px;
+}
+
+.correct {
+  background-color: #3fbf3f !important; /* Vert */
+  color: white;
+}
+
+.incorrect {
+  background-color: #e94f37 !important; /* Rouge */
+  color: white;
+}
+
+#all-cards {
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #1e5f74;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f4f6;
+}
+
+tr:hover {
+  background-color: #e3e8ec;
+}
+
+.intro {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f2f4f6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+  font-size: 1.8rem;
+  color: #1e5f74;
+}
+
+.intro p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.quick-access {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px auto;
+}
+
+.quick-access button {
+  background-color: #3caea3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quick-access button:hover {
+  background-color: #2b9e94;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #1e5f74;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.visible {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.logo a {
+  text-decoration: none;
+  color: inherit; /* Conserve la couleur du texte parent */
+}
+
